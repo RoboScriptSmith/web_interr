@@ -1,0 +1,3 @@
+Hello, World!
+Writing some more data.
+This is the end of the stream.
