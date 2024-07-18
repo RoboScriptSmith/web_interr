@@ -1,0 +1,12 @@
+<script>
+    const chatSocket = io('/chat');
+    const newsSocket = io('/news');
+
+    chatSocket.on('connect', () => {
+        console.log('Connected to chat namespace');
+    });
+
+    newsSocket.on('connect', () => {
+        console.log('Connected to news namespace');
+    });
+</script>

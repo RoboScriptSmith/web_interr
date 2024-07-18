@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Welcome to the <%= title %></h1>
+    <% if (user) { %>
+        <p>Hello, <%= user.name %>!</p>
+    <% } else { %>
+        <p>Please log in.</p>
+    <% } %>
+</body>
+</html>

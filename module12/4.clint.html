@@ -1,0 +1,7 @@
+<script>
+    socket.emit('joinRoom', 'room1');
+
+    socket.on('message', (msg) => {
+        console.log('Message from room:', msg);
+    });
+</script>

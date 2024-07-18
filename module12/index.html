@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket.io Example</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        socket.on('response', (msg) => {
+            console.log('Server response:', msg);
+        });
+
+        socket.emit('message', 'Hello Server');
+    </script>
+</head>
+<body>
+    <h1>Socket.io Example</h1>
+</body>
+</html>

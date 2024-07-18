@@ -1,0 +1,7 @@
+<script>
+    socket.on('newMessage', (msg) => {
+        console.log('New broadcast message:', msg);
+    });
+
+    socket.emit('broadcastMessage', 'Hello everyone!');
+</script>
